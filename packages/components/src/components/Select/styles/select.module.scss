@@ -62,6 +62,15 @@
         color: var(--text-color-x-weak);
     }
 
+    &[data-size='large'] {
+        padding: sizeToken.get(4) sizeToken.get(5);
+        height: auto;
+
+        .selectedValue {
+            padding-left: 0;
+        }
+    }
+
     &:has(input:placeholder-shown) {
         color: var(--text-color-x-weak);
     }
